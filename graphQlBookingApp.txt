@@ -1,0 +1,16 @@
+api design:
+
+    event booking:
+
+    events:
+        connected with users
+        create 
+        update 
+        delete
+        view( multiple, single, all events created by user, all events booked by user)
+    users:
+        connected with personal events
+        create
+        login
+        interact with events( book, cancel booking)
+        

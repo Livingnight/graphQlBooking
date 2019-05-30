@@ -1,0 +1,18 @@
+{
+  "name": "graphqlbookingapp",
+  "version": "1.0.0",
+  "description": "a SPA that utilizes node, graphQL, MongoDB, and React to make it possible for a user to signup, login, and interact with a booking service.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Jay Jernigan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.8.0",
+    "graphql": "^14.3.1"
+  }
+}

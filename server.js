@@ -31,7 +31,7 @@ app.use('/graphql', graphQlServer({
         }
 
         type RootMutation {
-            createEvent(eventInput: EventInput): String
+            createEvent(eventInput: EventInput): Event
         }
 
         schema {
@@ -41,7 +41,7 @@ app.use('/graphql', graphQlServer({
     `),
     rootValue: {
         events: () => {
-            return events
+            return events;
         },
         createEvent: (args) => {
             const event = {
@@ -51,6 +51,7 @@ app.use('/graphql', graphQlServer({
                 price: +args.eventInput.price,
                 date: args.eventInput.date
             }
+            console.log(args);
             events.push(event);
             return event;
         }
